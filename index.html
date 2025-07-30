@@ -1,13 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        html {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: burlywood     ;
+        }
+        body {
+            margin: 2em; /* Added some margin around the content */
+        }
+
+        /* --- Header Section --- */
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 1em; /* Adds space between contact items */
+            flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+            margin-top: 10px;
+        }
+
+        .contact-info p {
+            margin: 0; /* Removes default paragraph margin */
+            
+        }
+        
+        /* --- Image Style --- */
+        img {
+            width: 175px;
+            height: 200px;
+            border-radius: 5%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+            
+        }
+
+        /* --- Button Styles --- */
+        .link-button {
+            background-color: seagreen; /* LinkedIn's blue color */
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none; /* Removes underline from link */
+            font-size: 14px;
+        }
+        .link-button.email {
+            background-color: seagreen; /* A red color for email */
+        }
+        .link-button:hover {
+            opacity: 0.9;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
 </head>
 <body>
-    <h1>Mohammad Ayan Khan</h1>
-    <img src="./WhatsApp Image 2025-01-31 at 22.05.22_90a73886.jpg" alt="Profile Picture" style="width: 175px;height:200px;">
+    <div class="header-container">
+
+        <div class="header-text">
+            <h1>Mohammad Ayan Khan</h1>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> 7391962593</p> 
+                <span>|</span>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ayan1695khan@gmail.com" class="link-button" ...>Email</a>
+                <span>|</span>
+                <a href="https://www.linkedin.com/in/mohammad-ayan-khan1695/" class="link-button" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+
+        <img src="./WhatsApp Image 2025-01-31 at 22.05.22_90a73886.jpg" alt="Profile Picture">
+    
+    </div>
     <hr>
     <h2>Technical Skills:</h2>
     <ul>
@@ -64,17 +135,11 @@
             <li>Qualified for the second round of AdobexGeeksforGeeks (GenSolve) Hackathon</li>
             <li>5 star coder in Python on HackerRank.</li>
     </ul>
+    
+   
     <hr>
-    <footer>
-        <h2>Contact Information:</h2>
-        <p>Phone: +91 1234567890</p>
-        <p>Email: ayan1695khan@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mohammad-ayan-khan-123456789/">Mohammad Ayan Khan</a></p>
-        <p>GitHub: <a href="https://github.com/ayankhan1695">ayankhan1695</a></p>
-    </footer>
-    <hr>
-    <p>Last Updated: July 17, 2025</p>
-    <p>© 2025 Mohammad Ayan Khan. All rights reserved.</p>
+    <p>Last Updated: July 30, 2025</p>
+    <p>© 2025 Mohammad Ayan Khan. </p>
     
 
 
